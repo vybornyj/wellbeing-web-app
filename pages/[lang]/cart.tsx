@@ -20,7 +20,6 @@ const Page: NextPage<Props> = ({ lang, currency }) => {
   useEffect(() => {
     ;(async () => {
       const data = await apiRequestClient('/api/products/selects')
-      console.log('products', data.products)
       setProducts(data.products)
     })()
   }, [])
@@ -206,7 +205,7 @@ const Page: NextPage<Props> = ({ lang, currency }) => {
   )
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ res, params }) => ({
+export const getServerSideProps: GetServerSideProps = async ({ params }) => ({
   props: {
     lang: params?.lang,
     currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json()
