@@ -34,5 +34,5 @@
     "jsx": "preserve"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", ".next", "**/*.test.ts"]
+  "exclude": [".logs", ".next", ".yarn", "node_modules", "**/*.test.ts"]
 }
