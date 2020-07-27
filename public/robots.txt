@@ -1,0 +1,4 @@
+Sitemap: https://wellbeing.humandesign.red/api/sitemap
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
