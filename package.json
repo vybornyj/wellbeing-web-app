@@ -8,8 +8,8 @@
     "Arina Sheleketo <arrinna@inbox.ru> (https://www.instagram.com/arinasheleketo)"
   ],
   "resolutions": {
-    "@ampproject/toolbox-optimizer": "2.5.12",
-    "chokidar": "3.4.1"
+    "chokidar": "3.4.1",
+    "webpack": "5.0.0-beta.22"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",
@@ -19,7 +19,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "@tippyjs/react": "4.1.0",
     "bcryptjs": "2.4.3",
-    "next": "9.4.4",
+    "next": "9.5.0",
     "next-iron-session": "4.1.7",
     "next-pwa": "3.1.1",
     "node-google-translate-skidz": "1.1.2",
@@ -44,7 +44,11 @@
     "pages": "link:./pages",
     "src": "link:./src",
     "typescript": "3.9.7",
-    "webpack": "4.44.0"
+    "webpack": "5.0.0-beta.22"
+  },
+  "optionalDependencies": {
+    "querystring": "^0.2.0",
+    "webpack": "5.0.0-beta.22"
   },
   "engines": {
     "node": ">=14.4.0",
