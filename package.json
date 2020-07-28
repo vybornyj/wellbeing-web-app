@@ -1,6 +1,7 @@
 {
   "name": "wellbeing-web-app",
   "version": "0.9.0",
+  "private": true,
   "author": "Denis Vybornyj <denis.vybornyj@gmail.com> (https://github.com/vybornyj)",
   "contributors": [
     "Denis Prohorenko <den.prohorenko@gmail.com> (https://github.com/dprohorenko)",
