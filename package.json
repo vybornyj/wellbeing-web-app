@@ -10,8 +10,6 @@
   ],
   "scripts": {
     "_depcheck": "depcheck",
-    "_lint-format": "prettier --write {*,**/*}.{ts,tsx,js,jsx,mjs,cjs,json,md}",
-    "_lint-js": "eslint --fix --rule \"{'no-console':2}\" --ext .ts,.tsx,.js,.jsx,.mjs,.cjs .",
     "_lint-types": "tsc --pretty --noEmit",
     "_test": "jest --config ../.jestrc.js --rootDir .",
     "_type-coverage": "type-coverage --ignore-catch --detail --update",
@@ -29,7 +27,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "@tippyjs/react": "4.1.0",
     "bcryptjs": "2.4.3",
-    "next": "9.5.0",
+    "next": "9.5.1",
     "next-iron-session": "4.1.7",
     "next-pwa": "3.1.1",
     "node-google-translate-skidz": "1.1.2",
@@ -57,7 +55,7 @@
     "webpack": "5.0.0-beta.22"
   },
   "optionalDependencies": {
-    "querystring": "^0.2.0",
+    "querystring": "0.2.0",
     "webpack": "5.0.0-beta.22"
   },
   "engines": {
