@@ -1,6 +1,6 @@
 {
   "name": "wellbeing-web-app",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "private": true,
   "author": "Denis Vybornyj <denis.vybornyj@gmail.com> (https://github.com/vybornyj)",
   "contributors": [
@@ -16,7 +16,6 @@
     "_upgrade": "ncu -u"
   },
   "resolutions": {
-    "chokidar": "3.4.1",
     "webpack": "5.0.0-beta.22"
   },
   "dependencies": {
@@ -52,10 +51,6 @@
     "pages": "link:./pages",
     "src": "link:./src",
     "typescript": "3.9.7"
-  },
-  "optionalDependencies": {
-    "querystring": "0.2.0",
-    "webpack": "5.0.0-beta.22"
   },
   "engines": {
     "node": ">=14.4.0",
