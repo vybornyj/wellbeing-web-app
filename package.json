@@ -13,7 +13,8 @@
     "_lint-types": "tsc --pretty --noEmit",
     "_test": "jest --config ../.jestrc.js --rootDir .",
     "_type-coverage": "type-coverage --ignore-catch --detail --update",
-    "_upgrade": "ncu -u"
+    "_upgrade": "ncu -u",
+    "_upgrade-check": "ncu"
   },
   "resolutions": {
     "webpack": "5.0.0-beta.22"
