@@ -27,6 +27,7 @@
     "@fortawesome/react-fontawesome": "0.1.11",
     "@tippyjs/react": "4.1.0",
     "bcryptjs": "2.4.3",
+    "deus-date": "deusdevs/deus-date#v0.1.2",
     "next": "9.5.1",
     "next-iron-session": "4.1.7",
     "next-pwa": "3.1.1",

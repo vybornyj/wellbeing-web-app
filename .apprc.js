@@ -35,7 +35,7 @@ try {
   const envFile = '/app-config/env/wellbeing.env.js'
   if (fs.existsSync(envFile)) env = require(envFile)
 } catch (err) {
-  console.error(err)
+  // console.error(err)
 }
 
 const URL_APP = process.argv[2]

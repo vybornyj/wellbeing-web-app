@@ -1,4 +1,4 @@
-import React from 'react'
+import { ReactElement } from 'react'
 import 'reactn'
 
 interface storeCart {
@@ -14,7 +14,7 @@ interface storeUser {
 
 type storeAlertPopup = null | {
   type?: 'warn' | 'error' | 'info'
-  inner: React.ReactElement | string
+  inner: ReactElement | string
 }
 
 declare module 'reactn/default' {

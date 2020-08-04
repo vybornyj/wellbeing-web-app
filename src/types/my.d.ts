@@ -2,10 +2,6 @@ type error = true | undefined
 type lang = 'en' | 'ru'
 type limit = number
 
-interface anyObject {
-  [key: string]: any
-}
-
 interface Currency {
   rates: {
     CAD: number

@@ -25,32 +25,27 @@ const Page: NextPage<Props> = ({ error, lang }) => {
           {lang === 'en' ? (
             <>
               <p>
-                {' '}
                 Welcome to the Online Fitness University page! This is an information hub where you will find all the necessary information on setting
-                up and knowing yourself, correcting your path.{' '}
+                up and knowing yourself, correcting your path.
               </p>
               <p>
                 <i>
-                  {' '}
-                  <b> This is your way of Self-knowledge from Nutrition and Fitness to Relations with the world and with you. </b>{' '}
+                  <b> This is your way of Self-knowledge from Nutrition and Fitness to Relations with the world and with you. </b>
                 </i>
               </p>
               <p>
                 <i>
-                  {' '}
-                  <b> This is your way to create your own lifestyle. </b>{' '}
+                  <b> This is your way to create your own lifestyle. </b>
                 </i>
               </p>
               <p>
-                {' '}
                 All take <b> online </b> courses. At any time available to you. In social networks. We have closed webinars for project participants
-                and in the public domain on interesting topics with invited guests.{' '}
+                and in the public domain on interesting topics with invited guests.
               </p>
               <p>
-                {' '}
                 All projects target Disclosure <b> of your personality </b>. Pursuing Volume B and Number <b> DNA and Microbiome Testing </b>, we have
                 developed our own concept and methodology for discovering each genetic potential. Without looking back at anyone else, at new-fangled
-                phenomena ... only what you need at this time, for your specific purposes.{' '}
+                phenomena ... only what you need at this time, for your specific purposes.
               </p>
               <p> Our team has medical advisers, a dole and a style specialist. Everything you need for a complete transformation. </p>
             </>
@@ -89,17 +84,15 @@ const Page: NextPage<Props> = ({ error, lang }) => {
               <p> At the University’s Online Fitness, our goal is to help you reach yours. </p>
 
               <p>
-                {' '}
                 We are an Internet Fitness Hub where you can find everything you need to change your life, bring a new wave, get these new looks and
-                find tones of useful information about how to do it.{' '}
+                find tones of useful information about how to do it.
               </p>
 
               <h3> MISSION </h3>
 
               <p>
-                {' '}
                 Our mission is here to help people on their wellbeing journey. It can be weight loss or toning your body, it can be nutrition or
-                general well-being.{' '}
+                general well-being.
               </p>
 
               <h3> HOW? </h3>
@@ -113,9 +106,8 @@ const Page: NextPage<Props> = ({ error, lang }) => {
               <h3> WHY US? </h3>
 
               <p>
-                {' '}
                 We offer vibrant, individually tailored programs designed for you and your needs. Moreover, we are creating a completely new family
-                for you to support in this travel, with our one-to-one online support and other team members increasingly social media platforms.{' '}
+                for you to support in this travel, with our one-to-one online support and other team members increasingly social media platforms.
               </p>
             </>
           ) : (

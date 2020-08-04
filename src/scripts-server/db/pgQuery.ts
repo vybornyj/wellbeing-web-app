@@ -7,7 +7,7 @@ const { serverRuntimeConfig }: GetConfig = getConfig()
 
 const pool = new Pool(serverRuntimeConfig.PG_CONFIG)
 
-interface PgQueryResult<ROW = anyObject> {
+interface PgQueryResult<ROW = { [key: string]: any }> {
   command?: 'SELECT' | 'INSERT' | 'UPDATE' | 'DELETE' | string
   rowCount?: number
   oid?: number
@@ -26,7 +26,7 @@ interface PgQueryResult<ROW = anyObject> {
   err?: Error
 }
 
-type PgQuery = <ROW = anyObject>(query: SQLStatement, end?: boolean) => Promise<PgQueryResult<ROW>>
+type PgQuery = <ROW = { [key: string]: any }>(query: SQLStatement, end?: boolean) => Promise<PgQueryResult<ROW>>
 
 export const pgQuery: PgQuery = async (query, end = false) => {
   try {
@@ -34,7 +34,7 @@ export const pgQuery: PgQuery = async (query, end = false) => {
     if (end) await pool.end()
     return result
   } catch (err) {
-    logger.error(`pgQuery: exception, query=${query}`)
+    logger.error(`pgQuery: ${err}`)
     if (end) await pool.end()
     return { err }
   }

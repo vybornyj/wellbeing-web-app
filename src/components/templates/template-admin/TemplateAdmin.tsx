@@ -1,8 +1,8 @@
+import { renderPrettyUtcDate } from 'deus-date'
 import getConfig from 'next/config'
 import { FunctionComponent } from 'react'
 import { TemplateAdminUser } from 'src/components/templates/template-admin-user/TemplateAdminUser'
 import { templateAdminMenuItems } from 'src/components/templates/template-admin/templateAdminMenuItems'
-import { prettyYmdhm } from 'src/scripts/helpers/prettyYmdhm'
 
 const { publicRuntimeConfig }: GetConfig = getConfig()
 
@@ -22,7 +22,7 @@ export const TemplateAdmin: FunctionComponent<Props> = ({ error, title, children
       menuItems={templateAdminMenuItems}
       img='/images/template/admin-background.jpg'
       img2='/images/template/fabric_plaid.png'
-      asideFooter={`Версия ${publicRuntimeConfig.RUNTIME_VERSION} · ${prettyYmdhm(publicRuntimeConfig.RUNTIME_BUILD)}`}
+      asideFooter={`Версия ${publicRuntimeConfig.RUNTIME_VERSION} · ${renderPrettyUtcDate(publicRuntimeConfig.RUNTIME_BUILD)}`}
       withLangPrefix={false}
     >
       {children}
