@@ -1,9 +1,5 @@
-// Данный файл отрабатывает единожды на серверной стороне
-//
-// Онлайн генераторы иконок:
 // https://realfavicongenerator.net
 // http://romannurik.github.io/AndroidAssetStudio/index.html
-
 import getConfig from 'next/config'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
@@ -33,7 +29,7 @@ class AppDocument extends Document<{ lang: lang }> {
           <meta name='apple-mobile-web-app-status-bar-style' content={appMainColor} />
 
           <meta name='format-detection' content='telephone=no' />
-          <meta name='viewport' content='minimum-scale=5, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
+          <meta name='viewport' content='initial-scale=1, width=device-width' />
 
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png?v=jwEkP6xkdY' />
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png?v=jwEkP6xkdY' />
@@ -46,6 +42,7 @@ class AppDocument extends Document<{ lang: lang }> {
           <meta name='msapplication-TileColor' content={appMainColor} />
 
           {/* скачиваю гугл шрифт */}
+          <link rel='preload' href='https://fonts.googleapis.com/css?family=Fira+Sans:400,600&display=swap&subset=cyrillic' as='style' />
           <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans:400,600&display=swap&subset=cyrillic' />
 
           {/* применяю шрифт сразу же, что бы он отрисовался сразу после загрузки */}

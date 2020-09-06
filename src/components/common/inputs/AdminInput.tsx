@@ -11,7 +11,7 @@ export const AdminInput: FunctionComponent<Props> = ({ label, setValue, ...input
       {label ? <div className='label'>{label}</div> : null}
       <input
         {...inputHTMLAttributes}
-        onChange={event => {
+        onChange={(event) => {
           event.preventDefault()
           setValue(event.target.value)
         }}

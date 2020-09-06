@@ -15,7 +15,7 @@ interface Props {
 const Page: NextPage<Props> = ({ error, lang, url, articles, categories }) => {
   if (error) return <TemplateMain lang={lang} error={error} />
 
-  const category = categories?.find(category => category.url === url)
+  const category = categories?.find((category) => category.url === url)
   const title = lang === 'ru' ? category?.titleRu : category?.titleEn
 
   return (

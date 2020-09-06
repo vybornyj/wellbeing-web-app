@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 import { AppButton, AppButtonProps } from 'src/components/common/buttons/AppButton'
 
-export const QuickLinksButtonIcon: FunctionComponent<AppButtonProps> = props => {
+export const QuickLinksButtonIcon: FunctionComponent<AppButtonProps> = (props) => {
   return (
     <>
       <AppButton className='quick-links-button-icon' {...props} />

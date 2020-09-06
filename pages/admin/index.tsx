@@ -14,7 +14,7 @@ interface Props {
   pagesCount?: number
 }
 
-const Page: NextPage<Props> = props => {
+const Page: NextPage<Props> = (props) => {
   const { articlesCount = '?', articlesDraftsCount = '?', articlesLastAdded = '?', pagesCount = '?' } = props
 
   return (

@@ -52,7 +52,7 @@ export const ModalTextEditor: FunctionComponent<Props> = ({ titles, content, con
   const portal = () =>
     createPortal(
       <div className='modal-text-editor'>
-        <div className='modal' onClick={event => event.stopPropagation()} role='link' tabIndex={0}>
+        <div className='modal' onClick={(event) => event.stopPropagation()} role='link' tabIndex={0}>
           <div className='header'>
             <div className='titles'>
               {titles?.map((title, key) => (

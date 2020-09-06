@@ -52,7 +52,7 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children }
     <div className={`AppModal ${displayed}`}>
       <div className={`background ${opened}`} />
       <div className='scrollable' onClick={closing} role='link' tabIndex={0}>
-        <div className={`modal ${opened}`} onClick={event => event.stopPropagation()} role='link' tabIndex={0}>
+        <div className={`modal ${opened}`} onClick={(event) => event.stopPropagation()} role='link' tabIndex={0}>
           {children}
         </div>
       </div>

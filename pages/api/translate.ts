@@ -18,7 +18,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
   const source = lang === 'ru' ? 'en' : 'ru'
   const target = lang
 
-  const translated = await translate({ text, source, target }, r => r)
+  const translated = await translate({ text, source, target }, (r) => r)
 
   if (translated?.translation) {
     await res.status(200).json({ content: translated.translation })

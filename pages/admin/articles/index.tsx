@@ -29,7 +29,7 @@ const Page: NextPage<Props> = ({ error, articles, categories }) => {
               <div className='item'>{articles.contentEnLength}</div>
               {articles.categories?.map((categoryId, key) => (
                 <div className='item item2' key={key}>
-                  {categories?.find(category => category.categoryId === categoryId)?.titleRu}
+                  {categories?.find((category) => category.categoryId === categoryId)?.titleRu}
                 </div>
               ))}
               {articles.published ? null : <div className='item item3'>черновик</div>}

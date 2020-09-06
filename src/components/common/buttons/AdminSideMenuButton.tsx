@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 import { AppButton, AppButtonProps } from 'src/components/common/buttons/AppButton'
 
-export const AdminSideMenuButton: FunctionComponent<AppButtonProps> = props => (
+export const AdminSideMenuButton: FunctionComponent<AppButtonProps> = (props) => (
   <>
     <AppButton className='admin-side-menu-button' {...props} justifyContent='flex-start' />
 

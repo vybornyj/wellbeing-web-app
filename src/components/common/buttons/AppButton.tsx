@@ -30,7 +30,7 @@ export interface AppButtonProps {
   faIcon?: IconProp
 }
 
-export const AppButton: FunctionComponent<AppButtonProps> = props => {
+export const AppButton: FunctionComponent<AppButtonProps> = (props) => {
   const router = useRouter()
 
   const {

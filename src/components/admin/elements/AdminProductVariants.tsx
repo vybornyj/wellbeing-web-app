@@ -93,15 +93,15 @@ export const AdminProductVariants: FunctionComponent<Props> = ({ variants, setVa
                 <AdminButton onClick={() => handleSortDown(key)} type='blue' faIcon={faArrowRight} />
               )}
             </div>
-            <AdminInput label='Цена в Евро' value={price} setValue={value => handlePrice(key, value)} />
+            <AdminInput label='Цена в Евро' value={price} setValue={(value) => handlePrice(key, value)} />
             <div className='currency'>
               ≈ {(Number(price) * currency.rates.RUB).toFixed()} RUB ≈ {(Number(price) * currency.rates.USD).toFixed(2)} USD ≈{' '}
               {(Number(price) * currency.rates.GBP).toFixed(2)} GBP
             </div>
-            <AdminInput label='Название на русском' value={titleRu} setValue={value => handleTitleRu(key, value)} />
-            <AdminInput label='Выгода на русском' value={profitRu} setValue={value => handleProfitRu(key, value)} />
-            <AdminInput label='Название на английском' value={titleEn} setValue={value => handleTitleEn(key, value)} />
-            <AdminInput label='Выгода на английском' value={profitEn} setValue={value => handleProfitEn(key, value)} />
+            <AdminInput label='Название на русском' value={titleRu} setValue={(value) => handleTitleRu(key, value)} />
+            <AdminInput label='Выгода на русском' value={profitRu} setValue={(value) => handleProfitRu(key, value)} />
+            <AdminInput label='Название на английском' value={titleEn} setValue={(value) => handleTitleEn(key, value)} />
+            <AdminInput label='Выгода на английском' value={profitEn} setValue={(value) => handleProfitEn(key, value)} />
           </div>
           {variants?.length > 1 && (
             <>

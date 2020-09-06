@@ -12,7 +12,7 @@ const Api: NextApiHandler = async (req, res) => {
     const smStream = new SitemapStream({ hostname: `https://${req.headers.host}` })
 
     const writes: Writes = (array, prefix = '/') =>
-      array.forEach(el => {
+      array.forEach((el) => {
         const ru = `/ru${prefix}${el.url}`
         const en = `/en${prefix}${el.url}`
         smStream.write({

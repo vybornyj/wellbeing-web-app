@@ -72,9 +72,9 @@ const Page: NextPage<Props> = ({ error, categories }) => {
         ? stateCategories.map(({ url, titleRu, titleEn, dbAction }, key) =>
             dbAction !== 'delete' ? (
               <div className='category column' key={key}>
-                <AdminInput label='Название на русском' value={titleRu} setValue={value => setTitleRu(key, value)} />
-                <AdminInput label='Название на английском' value={titleEn} setValue={value => setTitleEn(key, value)} />
-                <AdminInput label='URL адрес категории' value={url} setValue={value => setUrl(key, value)} />
+                <AdminInput label='Название на русском' value={titleRu} setValue={(value) => setTitleRu(key, value)} />
+                <AdminInput label='Название на английском' value={titleEn} setValue={(value) => setTitleEn(key, value)} />
+                <AdminInput label='URL адрес категории' value={url} setValue={(value) => setUrl(key, value)} />
                 <div className='delete'>
                   <AdminButton onClick={() => handleRemove(key)} type='red' faIcon={faTrash}>
                     Удалить

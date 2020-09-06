@@ -25,12 +25,12 @@ export const AuthorizationForm: FunctionComponent<Props> = ({ lang }) => {
   useEffect(() => resetMessage(), [lang, formType])
 
   // ON CHANGES
-  const handleChangeEmail: onChange = event => {
+  const handleChangeEmail: onChange = (event) => {
     event.preventDefault()
     setEmail(event.currentTarget.value.toLowerCase())
   }
 
-  const handleChangePassword: onChange = event => {
+  const handleChangePassword: onChange = (event) => {
     event.preventDefault()
     setPassword(event.currentTarget.value)
   }

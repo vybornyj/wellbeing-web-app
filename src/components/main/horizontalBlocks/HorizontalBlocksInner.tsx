@@ -14,7 +14,7 @@ export const HorizontalBlocksInner: FunctionComponent<Props> = ({ elements }) =>
   const ref = useRef(null)
 
   if (ref.current) {
-    ref.current.addEventListener('wheel', event => {
+    ref.current.addEventListener('wheel', (event) => {
       event.preventDefault()
       ref.current.scrollTo({
         top: 0,

@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 import { AppButton, AppButtonProps } from 'src/components/common/buttons/AppButton'
 
-export const FooterButton: FunctionComponent<AppButtonProps> = props => (
+export const FooterButton: FunctionComponent<AppButtonProps> = (props) => (
   <>
     <AppButton className='footer-button' {...props} />
 

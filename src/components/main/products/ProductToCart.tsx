@@ -15,7 +15,7 @@ export const ProductToCart: FunctionComponent<Props> = ({ lang, productId, varia
   // @ts-ignore
   const STORE_CART_REMOVE = useDispatch('STORE_CART_REMOVE')
   const [storeCart] = useGlobal('storeCart')
-  let isProductInCart = storeCart.products.find(el => el.productId === productId && el.variantKey === variantKey)
+  let isProductInCart = storeCart.products.find((el) => el.productId === productId && el.variantKey === variantKey)
 
   const q = `${productId}-${variantKey} `
 

@@ -40,7 +40,7 @@ const Page: NextPage<Props> = ({ lang, currency }) => {
       <div className='products'>
         {products.map(({ productId, titleRu, titleEn, imageUrl, jcontainer, url }, index) =>
           jcontainer.variants.map(({ price, titleEn: titleEn2, titleRu: titleRu2, profitEn, profitRu }, variantKey) => {
-            if (storeCart.products.find(el => el.productId === productId && el.variantKey === variantKey)) {
+            if (storeCart.products.find((el) => el.productId === productId && el.variantKey === variantKey)) {
               return (
                 <div key={`${index}${variantKey}`}>
                   <div className='product'>

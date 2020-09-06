@@ -24,7 +24,7 @@ export const AppModalAdmin: FunctionComponent<Props> = ({ isOpen, closing, child
   if (!isOpen || !container) return null
   return createPortal(
     <div className='modal-text-editor admin-template' onClick={closing} role='link' tabIndex={0}>
-      <div className='modal' onClick={event => event.stopPropagation()} role='link' tabIndex={0}>
+      <div className='modal' onClick={(event) => event.stopPropagation()} role='link' tabIndex={0}>
         {children}
       </div>
 

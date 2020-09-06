@@ -77,11 +77,11 @@ const Page: NextPage<Props> = ({ error, singleton }) => {
       <div className='space20' />
       <AdminProductImage imageUrl={imageUrl} setImageUrl={setImageUrl} alt />
       <div className='space20' />
-      <AdminInput label='Название страницы' value={title} setValue={value => setTitle(value)} />
+      <AdminInput label='Название страницы' value={title} setValue={(value) => setTitle(value)} />
       <div className='space20' />
       {['facebook', 'instagram', 'youtube', 'email', 'phone'].map((name, key) => (
         <div className='column1023row1024' key={key}>
-          <AdminInput label={name} value={iconLinks[name]} setValue={value => setIconLinks({ ...iconLinks, [name]: value })} />
+          <AdminInput label={name} value={iconLinks[name]} setValue={(value) => setIconLinks({ ...iconLinks, [name]: value })} />
           <div className='top22'>
             <AdminButton onClick={() => setIconLinks({ ...iconLinks, [name]: '' })} type='red' faIcon={faTimes}>
               Очистить
@@ -92,10 +92,10 @@ const Page: NextPage<Props> = ({ error, singleton }) => {
       <div className='space20' />
       {links.map(({ urlRu, titleRu, urlEn, titleEn }, key) => (
         <div className='column1023row1024' key={key}>
-          <AdminInput label='Название на русском' value={titleRu} setValue={value => handleSet(key, value, 'titleRu')} />
-          <AdminInput label='URL на русском' value={urlRu} setValue={value => handleSet(key, value, 'urlRu')} />
-          <AdminInput label='Название на английском' value={titleEn} setValue={value => handleSet(key, value, 'titleEn')} />
-          <AdminInput label='URL на английском' value={urlEn} setValue={value => handleSet(key, value, 'urlEn')} />
+          <AdminInput label='Название на русском' value={titleRu} setValue={(value) => handleSet(key, value, 'titleRu')} />
+          <AdminInput label='URL на русском' value={urlRu} setValue={(value) => handleSet(key, value, 'urlRu')} />
+          <AdminInput label='Название на английском' value={titleEn} setValue={(value) => handleSet(key, value, 'titleEn')} />
+          <AdminInput label='URL на английском' value={urlEn} setValue={(value) => handleSet(key, value, 'urlEn')} />
           <div className='top22'>
             <AdminButton onClick={() => handleRemove(key)} type='red' faIcon={faTrash}>
               Удалить

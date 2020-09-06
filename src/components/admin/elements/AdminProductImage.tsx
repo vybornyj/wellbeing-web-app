@@ -14,7 +14,7 @@ export const AdminProductImage: FunctionComponent<Props> = ({ imageUrl, setImage
 
   const refInput = useRef(null)
 
-  const handleChange: onChange = async event => {
+  const handleChange: onChange = async (event) => {
     event.preventDefault()
     const file: File = refInput.current.files[0]
     if (file?.type) {

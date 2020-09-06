@@ -9,7 +9,7 @@ interface Props {
 
 export const AdminArticleCategories: FunctionComponent<Props> = ({ categories, categoriesIds, setCategoriesIds }) => {
   const handleSaveCheckbox = (categoryId: number) => {
-    const newCategoriesIds = categoriesIds.includes(categoryId) ? categoriesIds.filter(id => id !== categoryId) : [...categoriesIds, categoryId]
+    const newCategoriesIds = categoriesIds.includes(categoryId) ? categoriesIds.filter((id) => id !== categoryId) : [...categoriesIds, categoryId]
 
     setCategoriesIds(newCategoriesIds)
   }

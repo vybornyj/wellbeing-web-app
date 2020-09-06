@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react'
 import { AppButton, AppButtonProps } from 'src/components/common/buttons/AppButton'
 
-export const ModalMenuMobileButton: FunctionComponent<AppButtonProps> = props => (
+export const ModalMenuMobileButton: FunctionComponent<AppButtonProps> = (props) => (
   <>
     <AppButton className='modal-menu-mobile-button' {...props} />
 

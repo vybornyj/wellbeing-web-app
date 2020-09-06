@@ -93,7 +93,7 @@ const Page: NextPage<Props> = ({ error, email, purchases, reports, purchaseId })
       </div>
       <h3>Статус выбранного заказа</h3>
       <AdminSwitchPublished
-        published={localPurchases?.find(purchase => purchase?.purchaseId === purchaseId)?.published}
+        published={localPurchases?.find((purchase) => purchase?.purchaseId === purchaseId)?.published}
         setPublished={handleSavePublished}
         falseText='Выполнен'
         trueText='Активен'
@@ -102,7 +102,7 @@ const Page: NextPage<Props> = ({ error, email, purchases, reports, purchaseId })
         reports={reports}
         purchaseId={purchaseId}
         reload={handleReload}
-        lang={localPurchases?.find(purchase => purchase?.purchaseId === purchaseId)?.lang === 1 ? 'ru' : 'en'}
+        lang={localPurchases?.find((purchase) => purchase?.purchaseId === purchaseId)?.lang === 1 ? 'ru' : 'en'}
       />
     </TemplateAdmin>
   )

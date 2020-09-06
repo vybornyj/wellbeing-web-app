@@ -4,7 +4,7 @@ const { publicRuntimeConfig }: GetConfig = getConfig()
 
 type ApiRequestClientUploadImage = (data?: File) => Promise<{ imageUrl: string }>
 
-export const apiRequestClientUploadImage: ApiRequestClientUploadImage = async file => {
+export const apiRequestClientUploadImage: ApiRequestClientUploadImage = async (file) => {
   try {
     const apiResponse = await fetch(`${publicRuntimeConfig.URL_APP}/api/image/upload`, {
       method: 'POST',

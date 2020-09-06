@@ -26,13 +26,13 @@ export const AdminLayoutEditReports: FunctionComponent<Props> = ({ reports, purc
     setLocalReports(reports)
   }, [reports])
 
-  const handleDelete = async key => {
+  const handleDelete = async (key) => {
     const { reportId } = localReports[key]
     if (reportId !== 0) {
       const { rowCount } = await apiRequestClient('/api/reports/delete', { reportId })
       if (rowCount) {
         await STORE_SET_ALERT_POPUP({ inner: 'Отчет удален' })
-        const newReports = localReports.filter(report => report.reportId !== reportId)
+        const newReports = localReports.filter((report) => report.reportId !== reportId)
         setLocalReports(newReports)
         setDoRerender(!doRerender)
         reload()
@@ -41,7 +41,7 @@ export const AdminLayoutEditReports: FunctionComponent<Props> = ({ reports, purc
       }
     } else {
       await STORE_SET_ALERT_POPUP({ inner: 'Отчет удален' })
-      const newReports = localReports.filter(report => report.reportId !== reportId)
+      const newReports = localReports.filter((report) => report.reportId !== reportId)
       setLocalReports(newReports)
       setDoRerender(!doRerender)
     }
@@ -102,14 +102,14 @@ export const AdminLayoutEditReports: FunctionComponent<Props> = ({ reports, purc
           <AdminInput
             label={lang === 'ru' ? 'Название на русском' : 'Название на английском'}
             value={title}
-            setValue={value => setTitle(key, value)}
+            setValue={(value) => setTitle(key, value)}
             disabled={published}
           />
           <ModalTextEditor
             titles={[lang === 'ru' ? 'Отчет на русском' : 'Отчет на английском', title]}
             content={content}
             contentLength={contentLength}
-            setContent={value => setContent(key, value)}
+            setContent={(value) => setContent(key, value)}
           />
           {published ? null : (
             <>

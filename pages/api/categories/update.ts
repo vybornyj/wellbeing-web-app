@@ -18,7 +18,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
   let logs = []
   logs = [...logs, categories]
 
-  categories.forEach(async category => {
+  categories.forEach(async (category) => {
     if (category.dbAction === 'update') {
       if (category.categoryId) {
         logs = [

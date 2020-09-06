@@ -36,7 +36,7 @@ export const NewPasswordForm: FunctionComponent<Props> = ({ userId, email, token
   const [password, setPassword] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleChangePassword: onChange = event => {
+  const handleChangePassword: onChange = (event) => {
     event.preventDefault()
     setPassword(event.currentTarget.value)
     setMessage({ text: texts.msgDefault })

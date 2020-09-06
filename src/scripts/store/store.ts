@@ -32,7 +32,7 @@ const STORE_CART_ADD: Reducers['STORE_CART_ADD'] = async (globalState, __, produ
 const STORE_CART_REMOVE: Reducers['STORE_CART_REMOVE'] = async (globalState, __, productId, variantKey) => {
   let cartProducts = globalState.storeCart.products
 
-  const isInCart = obj => !(obj.productId === productId && obj.variantKey === variantKey)
+  const isInCart = (obj) => !(obj.productId === productId && obj.variantKey === variantKey)
 
   cartProducts = cartProducts.filter(isInCart)
 
@@ -80,7 +80,7 @@ const STORE_CLOSE_USER_SESSION = async (_, __) => {
   }
 }
 
-const STORE_INIT = async globalState => {
+const STORE_INIT = async (globalState) => {
   if (!globalState.storeArticles10.length || !globalState.storeArticles10.length) {
     const { articles, products } = await apiRequestClient(`/api/init`)
     return {
