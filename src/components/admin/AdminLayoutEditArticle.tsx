@@ -41,7 +41,7 @@ export const AdminLayoutEditArticle: FunctionComponent<Props> = ({ article, cate
       contentEn,
       contentRuLength,
       contentEnLength,
-      categories: categoriesIds
+      categories: categoriesIds,
     }
 
     const { insertId, rowCount } = await apiRequestClient('/api/articles/insertOrUpdate', data)
@@ -95,7 +95,7 @@ export const AdminLayoutEditArticle: FunctionComponent<Props> = ({ article, cate
           setTitleEn,
           urlLabel: 'URL адрес статьи',
           titleRuLabel: 'Название статьи на русском',
-          titleEnLabel: 'Название статьи на английском'
+          titleEnLabel: 'Название статьи на английском',
         }}
       />
 
@@ -118,7 +118,7 @@ export const AdminLayoutEditArticle: FunctionComponent<Props> = ({ article, cate
           titleRu,
           titleEn,
           labelRu: 'Статья на русском',
-          labelEn: 'Статья на английском'
+          labelEn: 'Статья на английском',
         }}
       />
 

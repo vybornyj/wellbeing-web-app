@@ -45,7 +45,7 @@ export const AppButton: FunctionComponent<AppButtonProps> = (props) => {
     justifyContent = 'center',
     flex = '1 0',
     listItem = false,
-    faIcon
+    faIcon,
   } = props
 
   let { href = '/', as, className = '' } = props

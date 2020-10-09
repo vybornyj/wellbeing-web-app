@@ -23,8 +23,8 @@ export const getServerSideProps: GetServerSideProps = async ({ res, params }) =>
   props: await apiRequestServer(res, '/api/articles/select', {
     articleId: params?.articleId,
     unpublished: true,
-    limit: 1
-  })
+    limit: 1,
+  }),
 })
 
 export default Page

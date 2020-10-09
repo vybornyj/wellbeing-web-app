@@ -49,8 +49,8 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
       : {
           purchases: result1?.rows,
           activeCount: result2?.rows?.[0].count,
-          completedCount: result3?.rows?.[0].count
-        }
+          completedCount: result3?.rows?.[0].count,
+        },
   )
 }
 

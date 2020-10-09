@@ -29,7 +29,7 @@ const Page: NextPage<Props> = ({ lang }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => ({
-  props: { lang: params?.lang }
+  props: { lang: params?.lang },
 })
 
 export default Page

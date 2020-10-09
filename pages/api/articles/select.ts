@@ -74,8 +74,8 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
         ? { article: articles?.[0], categories }
         : {
             articles,
-            categories
-          }
+            categories,
+          },
     )
   } else {
     res.status(200).json({})

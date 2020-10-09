@@ -24,10 +24,10 @@ export const getServerSideProps: GetServerSideProps = async ({ res, params }) =>
     ...(await apiRequestServer(res, '/api/products/adminSelect', {
       productId: params?.productId,
       unpublished: true,
-      limit: 1
+      limit: 1,
     })),
-    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json()
-  }
+    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json(),
+  },
 })
 
 export default Page

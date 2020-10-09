@@ -5,8 +5,8 @@ module.exports = {
   serverRuntimeConfig,
   compress: false,
   devIndicators: {
-    autoPrerender: false
+    autoPrerender: false,
   },
   poweredByHeader: false,
-  reactStrictMode: false
+  reactStrictMode: false,
 }

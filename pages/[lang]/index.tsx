@@ -16,7 +16,7 @@ const Page: NextPage<Props> = ({ error, lang }) => {
       lang={lang}
       titles={{
         ru: 'Online Fitness University – by Sofia Rudina-Myers',
-        en: 'Онлайн Университет Фитнеса – Софии Рудиной - Майерс'
+        en: 'Онлайн Университет Фитнеса – Софии Рудиной - Майерс',
       }}
       isMainPage
     >
@@ -169,8 +169,8 @@ const Page: NextPage<Props> = ({ error, lang }) => {
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => ({
   props: {
-    lang: params?.lang
-  }
+    lang: params?.lang,
+  },
 })
 
 export default Page

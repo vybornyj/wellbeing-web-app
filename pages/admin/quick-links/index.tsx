@@ -28,7 +28,7 @@ const Page: NextPage<Props> = ({ error, singleton }) => {
     instagram: singleton?.iconLinks?.instagram ?? '',
     youtube: singleton?.iconLinks?.youtube ?? '',
     email: singleton?.iconLinks?.email ?? '',
-    phone: singleton?.iconLinks?.phone ?? ''
+    phone: singleton?.iconLinks?.phone ?? '',
   })
 
   if (error) return <TemplateAdmin error={error} />
@@ -57,8 +57,8 @@ const Page: NextPage<Props> = ({ error, singleton }) => {
         title,
         imageUrl,
         links,
-        iconLinks
-      }
+        iconLinks,
+      },
     }
     const { rowCount } = await apiRequestClient('/api/singletons/update', data)
 
@@ -124,7 +124,7 @@ const Page: NextPage<Props> = ({ error, singleton }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/singletons/select', { singletonId: 1 })
+  props: await apiRequestServer(res, '/api/singletons/select', { singletonId: 1 }),
 })
 
 export default Page

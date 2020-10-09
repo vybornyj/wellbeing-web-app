@@ -46,7 +46,7 @@ const Api = async (req, res: NextApiResponse<ResponseBody>) => {
       req.session.destroy()
 
       res.status(200).json({
-        result: true
+        result: true,
       })
     } else {
       logger.error(`/api/session/changePassword: (resultUpdateUsers.err, ...), token=${token}`)

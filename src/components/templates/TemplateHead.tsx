@@ -17,7 +17,7 @@ interface Props {
 
 const descriptions = {
   ru: 'Исследовательский проект Благополучие',
-  en: 'Wellbeing Research Project'
+  en: 'Wellbeing Research Project',
 }
 
 export const TemplateHead: FunctionComponent<Props> = ({ lang = 'ru', title, titles, titleBase }) => {

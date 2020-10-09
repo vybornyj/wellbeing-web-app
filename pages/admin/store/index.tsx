@@ -32,7 +32,7 @@ const Page: NextPage<Props> = ({ error, products }) => {
               </div>
               {published ? null : <div className='item item-pub'>снято с продажи</div>}
             </AdminButton>
-          )
+          ),
         )}
       </div>
 
@@ -66,7 +66,7 @@ const Page: NextPage<Props> = ({ error, products }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/products/adminSelect', { unpublished: true })
+  props: await apiRequestServer(res, '/api/products/adminSelect', { unpublished: true }),
 })
 
 export default Page

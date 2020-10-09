@@ -107,8 +107,8 @@ const Page: NextPage<Props> = ({ lang, singleton }) => {
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => ({
   props: {
     ...(await apiRequestServer(res, '/api/singletons/select', { singletonId: 1 })),
-    lang: req?.headers?.['accept-language']?.includes('ru') ? 'ru' : 'en'
-  }
+    lang: req?.headers?.['accept-language']?.includes('ru') ? 'ru' : 'en',
+  },
 })
 
 export default Page

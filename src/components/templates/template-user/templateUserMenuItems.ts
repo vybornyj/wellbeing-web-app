@@ -23,5 +23,5 @@ export const templateUserMenuItems: menuItems = [
   { type: 'title', children: 'Ссылки', en: 'Links' },
   { type: 'button', ru: 'На главную', en: 'Main Page', href: '/', faIcon: faHome },
   { type: 'button', ru: 'В магазин', en: 'Store', href: '/products', faIcon: faStore },
-  { type: 'button', ru: 'В админку', en: 'Admin Side', href: '/admin', faIcon: faJedi, langPrefix: false }
+  { type: 'button', ru: 'В админку', en: 'Admin Side', href: '/admin', faIcon: faJedi, langPrefix: false },
 ]

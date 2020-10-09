@@ -29,7 +29,7 @@ const AppEditor: FunctionComponent<Props> = ({ id, initial }) => {
       'clean',
       'link',
       'image',
-      'video'
+      'video',
     ],
     modules: {
       toolbar: [
@@ -38,9 +38,9 @@ const AppEditor: FunctionComponent<Props> = ({ id, initial }) => {
         [{ align: '' }, { align: 'center' }, { align: 'right' }],
         [{ color: [] }, { background: [] }],
         ['clean'],
-        ['link', 'image', 'video']
-      ]
-    }
+        ['link', 'image', 'video'],
+      ],
+    },
   })
 
   useEffect(() => {

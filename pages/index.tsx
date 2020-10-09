@@ -4,7 +4,7 @@ const Page: NextPage = () => null
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   res.writeHead(301, {
-    Location: `https://${req?.headers?.host}/${req?.headers?.['accept-language']?.includes('ru') ? 'ru' : 'en'}`
+    Location: `https://${req?.headers?.host}/${req?.headers?.['accept-language']?.includes('ru') ? 'ru' : 'en'}`,
   })
   res.end()
   return { props: {} }

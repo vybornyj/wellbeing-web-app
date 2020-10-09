@@ -10,8 +10,8 @@ export const apiRequestClientUploadImage: ApiRequestClientUploadImage = async (f
       method: 'POST',
       body: file,
       headers: {
-        'Content-Type': file.type
-      }
+        'Content-Type': file.type,
+      },
     })
 
     const json = (await apiResponse.json()) || {}

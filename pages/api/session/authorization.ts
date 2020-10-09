@@ -34,7 +34,7 @@ const Api = async (req, res: NextApiResponse<ResponseBody>) => {
 
       res.status(200).json({
         result: 'authOk',
-        user: { email, isAdmin }
+        user: { email, isAdmin },
       })
     } else {
       res.status(200).json({ result: 'msgAuthWrongPassword' })

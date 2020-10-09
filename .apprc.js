@@ -5,7 +5,7 @@ const packageJson = require('./package.json')
 let env = {
   publicRuntimeConfig: {
     URL_STATIC: '',
-    API_PUBLIC_KEY_STRIPE: ''
+    API_PUBLIC_KEY_STRIPE: '',
   },
   serverRuntimeConfig: {
     PATH_STATIC: '',
@@ -15,7 +15,7 @@ let env = {
       port: 0,
       user: '',
       password: '',
-      database: ''
+      database: '',
     },
     NODEMAILER_CONFIG: {
       host: '',
@@ -23,10 +23,10 @@ let env = {
       secure: true,
       auth: {
         user: '',
-        pass: ''
-      }
-    }
-  }
+        pass: '',
+      },
+    },
+  },
 }
 
 const PATH_APP = path.resolve()
@@ -55,14 +55,14 @@ const appConfig = {
     RUNTIME_VERSION,
     RUNTIME_BUILD,
     URL_APP,
-    ...publicRuntimeConfig
+    ...publicRuntimeConfig,
   },
   serverRuntimeConfig: {
     LOG_ERROR,
     LOG_WARN,
     PATH_APP,
-    ...serverRuntimeConfig
-  }
+    ...serverRuntimeConfig,
+  },
 }
 
 fs.rmdir(dotApp, { recursive: true }, () => {

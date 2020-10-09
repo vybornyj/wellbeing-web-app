@@ -19,7 +19,7 @@ const Page: NextPage<Props> = ({ error, categories }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/categories/select')
+  props: await apiRequestServer(res, '/api/categories/select'),
 })
 
 export default Page

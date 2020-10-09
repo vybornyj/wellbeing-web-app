@@ -15,7 +15,7 @@ const ru = {
   titleInfo: 'Информация',
   titleAsWellAs: 'А так же',
   titleImages: 'Присоединяйтесь к нам!',
-  copyright: 'Исследовательский проект Благополучие. Все права защищены.'
+  copyright: 'Исследовательский проект Благополучие. Все права защищены.',
 }
 const en = {
   titleContacts: 'Contacts',
@@ -25,11 +25,11 @@ const en = {
   titleInfo: 'Information',
   titleAsWellAs: 'As Well As',
   titleImages: 'Join Us!',
-  copyright: 'Wellbeing Research Project. All Rights Reserved.'
+  copyright: 'Wellbeing Research Project. All Rights Reserved.',
 }
 const uni = {
   phone: '+(44) 75 85 313 535',
-  email: 'WellbeingResearchPro@gmail.com'
+  email: 'WellbeingResearchPro@gmail.com',
 }
 
 export const TemplateMainFooter: FunctionComponent<Props> = ({ lang }) => {

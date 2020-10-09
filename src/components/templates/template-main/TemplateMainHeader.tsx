@@ -24,7 +24,7 @@ const menuLinks = [
 
   { type: 'title', children: 'Прочее' },
   { type: 'button', href: '/[url]', as: '/about-us', ru: 'О НАС', en: 'ABOUT US' },
-  { type: 'button', href: '/[url]', as: '/team', ru: 'НАША КОМАНДА', en: 'OUR TEAM' }
+  { type: 'button', href: '/[url]', as: '/team', ru: 'НАША КОМАНДА', en: 'OUR TEAM' },
 ]
 
 export const TemplateMainHeader: FunctionComponent<Props> = ({ lang, isMainPage }) => {

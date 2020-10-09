@@ -29,7 +29,7 @@ const contentTypeToExtension = {
   'image/x-xwindowdump': '.xwd',
   'image/vnd.microsoft.icon': '.ico',
   'image/vnd.wap.wbmp': '.wbmp',
-  'image/webp': '.webp'
+  'image/webp': '.webp',
 }
 
 const Api: NextApiHandler = async (req, res) => {
@@ -52,8 +52,8 @@ const Api: NextApiHandler = async (req, res) => {
 
 export const config = {
   api: {
-    bodyParser: false
-  }
+    bodyParser: false,
+  },
 }
 
 export default withSession(Api)

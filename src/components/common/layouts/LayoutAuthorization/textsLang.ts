@@ -4,15 +4,15 @@ export const textsLang = {
     forgotPassword: 'ЗАБЫЛИ ПАРОЛЬ?',
     authorization: {
       msgDefault: 'С возвращением!',
-      submit: 'Войти'
+      submit: 'Войти',
     },
     registration: {
       msgDefault: 'Присоединяйтесь!',
-      submit: 'Зарегистрироваться'
+      submit: 'Зарегистрироваться',
     },
     reset: {
       msgDefault: 'Введите email для сброса пароля',
-      submit: 'Отправить'
+      submit: 'Отправить',
     },
     msgErrorInputEmail: 'Проверьте введенный Email',
     msgErrorInputPassword: 'Пароль должен быть от 6 до 32 символов',
@@ -27,22 +27,22 @@ export const textsLang = {
     msgAuthNoUser: 'Пользователя с таким Email не существует',
 
     msgDbError: 'Ошибка сервера',
-    msgError: 'Неизвестная ошибка'
+    msgError: 'Неизвестная ошибка',
   },
   en: {
     authButton: 'LOG IN',
     forgotPassword: 'FORGOT PASSWORD?',
     authorization: {
       msgDefault: 'Welcome back!',
-      submit: 'Log in'
+      submit: 'Log in',
     },
     registration: {
       msgDefault: 'Join now!',
-      submit: 'Sign up'
+      submit: 'Sign up',
     },
     reset: {
       msgDefault: 'Enter email for reset password',
-      submit: 'Submit'
+      submit: 'Submit',
     },
     msgErrorInputEmail: 'Check entered Email',
     msgErrorInputPassword: 'Password must be between 6 and 32 characters',
@@ -57,6 +57,6 @@ export const textsLang = {
     msgAuthNoUser: 'User with such Email does not exist',
 
     msgDbError: 'Server error',
-    msgError: 'Unknown error'
-  }
+    msgError: 'Unknown error',
+  },
 }

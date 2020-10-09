@@ -72,7 +72,7 @@ const Page: NextPage<Props> = ({ error, articles, categories }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/articles/select', { unpublished: true })
+  props: await apiRequestServer(res, '/api/articles/select', { unpublished: true }),
 })
 
 export default Page

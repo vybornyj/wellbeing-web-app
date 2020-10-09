@@ -20,14 +20,14 @@ export const NewPasswordForm: FunctionComponent<Props> = ({ userId, email, token
       msgDefault: `Установка нового пароля для ${email}`,
       msgErrorInputPassword: 'Пароль должен быть от 6 до 32 символов',
       msgErrorUndefined: 'Неизвестная ошибка',
-      submit: 'Установить новый пароль'
+      submit: 'Установить новый пароль',
     },
     en: {
       msgDefault: `Setting a new password for ${email}`,
       msgErrorInputPassword: 'Password must be between 6 and 32 characters',
       msgErrorUndefined: 'Unknown error',
-      submit: 'Set new password'
-    }
+      submit: 'Set new password',
+    },
   }
 
   const texts = lang === 'ru' ? textsLang.ru : textsLang.en

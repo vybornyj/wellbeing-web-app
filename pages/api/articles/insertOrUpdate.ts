@@ -31,7 +31,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
            "contentRuLength" = ${contentRuLength},
            "contentEnLength" = ${contentEnLength},
            "categories" = ${categories}
-    WHERE  "articleId" = ${articleId}`
+    WHERE  "articleId" = ${articleId}`,
   )
 
   if (result.err) {

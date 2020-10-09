@@ -11,22 +11,22 @@ export const logger = createLogger({
     new transports.File({
       filename: serverRuntimeConfig.LOG_ERROR,
       format: combine(timestamp(), fileFormat),
-      level: 'error'
+      level: 'error',
     }),
     new transports.File({
       filename: serverRuntimeConfig.LOG_WARN,
       format: combine(timestamp(), fileFormat),
-      level: 'warn'
-    })
+      level: 'warn',
+    }),
   ],
-  exitOnError: false
+  exitOnError: false,
 })
 
 if (!publicRuntimeConfig.RUNTIME_IS_PRODUCTION) {
   logger.add(
     new transports.Console({
       format: combine(format.colorize(), timestamp(), consoleFormat),
-      level: 'info'
-    })
+      level: 'info',
+    }),
   )
 }

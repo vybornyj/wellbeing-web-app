@@ -59,7 +59,7 @@ const Page: NextPage<Props> = ({ error, pages }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/pages/select')
+  props: await apiRequestServer(res, '/api/pages/select'),
 })
 
 export default Page

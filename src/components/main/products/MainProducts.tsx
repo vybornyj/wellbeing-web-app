@@ -39,7 +39,7 @@ export const MainProducts: FunctionComponent<Props> = ({ lang, products, currenc
               {/* <ProductToCart lang={lang} product={{productId, variantKey}}/> */}
             </div>
           </div>
-        ))
+        )),
       )}
 
       <style jsx>{

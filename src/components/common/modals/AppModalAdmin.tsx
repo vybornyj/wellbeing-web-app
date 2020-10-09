@@ -69,6 +69,6 @@ export const AppModalAdmin: FunctionComponent<Props> = ({ isOpen, closing, child
         `
       }</style>
     </div>,
-    container
+    container,
   )
 }

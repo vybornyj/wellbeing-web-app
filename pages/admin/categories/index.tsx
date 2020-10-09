@@ -81,7 +81,7 @@ const Page: NextPage<Props> = ({ error, categories }) => {
                   </AdminButton>
                 </div>
               </div>
-            ) : null
+            ) : null,
           )
         : null}
       <div className='space20' />
@@ -122,7 +122,7 @@ const Page: NextPage<Props> = ({ error, categories }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/categories/select')
+  props: await apiRequestServer(res, '/api/categories/select'),
 })
 
 export default Page

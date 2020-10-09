@@ -111,8 +111,8 @@ const Page: NextPage<Props> = ({ error, email, purchases, reports, purchaseId })
 export const getServerSideProps: GetServerSideProps = async ({ res, params }) => ({
   props: {
     ...(await apiRequestServer(res, '/api/purchases/select2', { purchaseId: params?.purchaseId })),
-    purchaseId: Number(params?.purchaseId)
-  }
+    purchaseId: Number(params?.purchaseId),
+  },
 })
 
 export default Page

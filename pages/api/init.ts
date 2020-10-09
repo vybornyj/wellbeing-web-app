@@ -31,7 +31,7 @@ const Api: NextApiHandler<ResponseBody> = async (_, res) => {
   if (!articlesErr && !productsErr) {
     res.status(200).json({
       articles,
-      products
+      products,
     })
   } else {
     res.status(200).json({})

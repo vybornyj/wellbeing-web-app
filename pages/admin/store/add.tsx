@@ -14,8 +14,8 @@ const Page: NextPage<Props> = ({ currency }) => (
 
 export const getServerSideProps: GetServerSideProps = async () => ({
   props: {
-    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json()
-  }
+    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json(),
+  },
 })
 
 export default Page

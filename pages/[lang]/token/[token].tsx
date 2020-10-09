@@ -70,9 +70,9 @@ export const getServerSideProps: GetServerSideProps = async ({ res, params }) =>
     lang: params?.lang,
     token: params?.token,
     ...(await apiRequestServer(res, '/api/tokens/select', {
-      token: String(params?.token)
-    }))
-  }
+      token: String(params?.token),
+    })),
+  },
 })
 
 export default Page

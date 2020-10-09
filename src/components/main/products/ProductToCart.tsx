@@ -10,9 +10,7 @@ interface Props {
 }
 
 export const ProductToCart: FunctionComponent<Props> = ({ lang, productId, variantKey }) => {
-  // @ts-ignore
   const STORE_CART_ADD = useDispatch('STORE_CART_ADD')
-  // @ts-ignore
   const STORE_CART_REMOVE = useDispatch('STORE_CART_REMOVE')
   const [storeCart] = useGlobal('storeCart')
   let isProductInCart = storeCart.products.find((el) => el.productId === productId && el.variantKey === variantKey)

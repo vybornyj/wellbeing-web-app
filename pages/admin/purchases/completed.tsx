@@ -21,7 +21,7 @@ const Page: NextPage<Props> = ({ error, purchases, activeCount, completedCount }
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => ({
-  props: await apiRequestServer(res, '/api/purchases/select', { published: false })
+  props: await apiRequestServer(res, '/api/purchases/select', { published: false }),
 })
 
 export default Page

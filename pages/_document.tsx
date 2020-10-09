@@ -55,7 +55,7 @@ class AppDocument extends Document<{ lang: lang }> {
             publicRuntimeConfig.RUNTIME_IS_PRODUCTION && (
               <script
                 dangerouslySetInnerHTML={{
-                  __html: 'if (window?.__REACT_DEVTOOLS_STORE_HOOK__) window.__REACT_DEVTOOLS_STORE_HOOK__.inject = function () {}'
+                  __html: 'if (window?.__REACT_DEVTOOLS_STORE_HOOK__) window.__REACT_DEVTOOLS_STORE_HOOK__.inject = function () {}',
                 }}
               />
             )

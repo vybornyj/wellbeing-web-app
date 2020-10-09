@@ -19,7 +19,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
 
   // userId пользователя текущей покупки
   const result1 = await pgQuery<{ userId: User['userId'] }>(
-    SQL/* language=SQL */ `SELECT "userId" FROM "userPurchases" WHERE "purchaseId" = ${purchaseId}`
+    SQL/* language=SQL */ `SELECT "userId" FROM "userPurchases" WHERE "purchaseId" = ${purchaseId}`,
   )
   const { userId } = result1?.rows?.[0]
 
@@ -61,8 +61,8 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
       : {
           email: result2?.rows?.[0].email,
           purchases: result3.rows,
-          reports: result4.rows
-        }
+          reports: result4.rows,
+        },
   )
 }
 

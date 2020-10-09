@@ -131,6 +131,6 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children }
         `
       }</style>
     </div>,
-    container
+    container,
   )
 }

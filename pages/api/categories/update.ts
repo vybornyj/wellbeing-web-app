@@ -29,7 +29,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
                "titleRu" = ${category.titleRu},
                "titleEn" = ${category.titleEn}
         WHERE  "categoryId" = ${category.categoryId}
-      `)
+      `),
         ]
       } else {
         logs = [
@@ -39,7 +39,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
         INTO   "articlesCategories"
                ("url", "titleRu", "titleEn")
         VALUES (${category.url}, ${category.titleRu}, ${category.titleEn})
-      `)
+      `),
         ]
       }
     } else if (category?.dbAction === 'delete') {
@@ -49,7 +49,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
         DELETE
         FROM "articlesCategories"
         WHERE  "categoryId" = ${category.categoryId}
-      `)
+      `),
       ]
 
       logs = [
@@ -58,7 +58,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
         UPDATE "articles"
         SET "categories" = array_remove("categories", ${category.categoryId})
         WHERE "categories" @> ARRAY[${category.categoryId}]::integer[]
-      `)
+      `),
       ]
     }
   })

@@ -130,7 +130,7 @@ export const ModalTextEditor: FunctionComponent<Props> = ({ titles, content, con
           `
         }</style>
       </div>,
-      container
+      container,
     )
 
   return (

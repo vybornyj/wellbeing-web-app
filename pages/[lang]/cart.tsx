@@ -68,7 +68,7 @@ const Page: NextPage<Props> = ({ lang, currency }) => {
                 </div>
               )
             } else return null
-          })
+          }),
         )}
       </div>
       {/* </div> */}
@@ -208,8 +208,8 @@ const Page: NextPage<Props> = ({ lang, currency }) => {
 export const getServerSideProps: GetServerSideProps = async ({ params }) => ({
   props: {
     lang: params?.lang,
-    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json()
-  }
+    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json(),
+  },
 })
 
 export default Page

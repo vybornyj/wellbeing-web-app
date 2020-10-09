@@ -19,15 +19,15 @@ const Api: NextApiHandler = async (req, res) => {
           url: ru,
           links: [
             { lang: 'ru', url: ru },
-            { lang: 'en', url: en }
-          ]
+            { lang: 'en', url: en },
+          ],
         })
         smStream.write({
           url: en,
           links: [
             { lang: 'en', url: en },
-            { lang: 'ru', url: ru }
-          ]
+            { lang: 'ru', url: ru },
+          ],
         })
       })
 

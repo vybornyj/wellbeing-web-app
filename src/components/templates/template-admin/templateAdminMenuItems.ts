@@ -23,5 +23,5 @@ export const templateAdminMenuItems: menuItems = [
   { type: 'button', children: 'На главную', href: '/[lang]', as: '/ru', faIcon: faHome },
   { type: 'button', children: 'Main Page', href: '/[lang]', as: '/en', faIcon: faHome },
   { type: 'button', children: 'Личный каб', href: '/[lang]/my', as: '/ru/my', faIcon: faBoxOpen },
-  { type: 'button', children: 'My Account', href: '/[lang]/my', as: '/en/my', faIcon: faBoxOpen }
+  { type: 'button', children: 'My Account', href: '/[lang]/my', as: '/en/my', faIcon: faBoxOpen },
 ]

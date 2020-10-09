@@ -29,7 +29,7 @@ export const AdminTitlesUrlInputs: FunctionComponent<Props> = ({
   setTitleEn,
   urlLabel,
   titleRuLabel,
-  titleEnLabel
+  titleEnLabel,
 }) => {
   const STORE_SET_ALERT_POPUP = useDispatch('STORE_SET_ALERT_POPUP')
 

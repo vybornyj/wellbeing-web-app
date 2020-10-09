@@ -34,7 +34,7 @@ export const AdminLayoutEditPage: FunctionComponent<Props> = ({ page }) => {
       contentRu,
       contentEn,
       contentRuLength,
-      contentEnLength
+      contentEnLength,
     }
 
     const { insertId, rowCount } = await apiRequestClient('/api/pages/insertOrUpdate', data)
@@ -88,7 +88,7 @@ export const AdminLayoutEditPage: FunctionComponent<Props> = ({ page }) => {
           setTitleEn,
           urlLabel: 'URL адрес страницы',
           titleRuLabel: 'Название страницы на русском',
-          titleEnLabel: 'Название страницы на английском'
+          titleEnLabel: 'Название страницы на английском',
         }}
       />
 
@@ -107,7 +107,7 @@ export const AdminLayoutEditPage: FunctionComponent<Props> = ({ page }) => {
           titleRu,
           titleEn,
           labelRu: 'Страница на русском',
-          labelEn: 'Страница на английском'
+          labelEn: 'Страница на английском',
         }}
       />
 

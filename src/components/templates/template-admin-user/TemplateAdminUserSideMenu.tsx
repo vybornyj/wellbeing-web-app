@@ -15,7 +15,7 @@ export const TemplateAdminUserSideMenu: FunctionComponent<Props> = ({ menuItems,
         <AdminSideMenuButton {...props} withLangPrefix={langPrefix ?? withLangPrefix} lang={lang} key={key} />
       ) : type === 'title' ? (
         <hr key={key} />
-      ) : null
+      ) : null,
     )}
 
     <style jsx>{

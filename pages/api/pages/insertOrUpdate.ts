@@ -28,7 +28,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
            "contentEn" = ${contentEn},
            "contentRuLength" = ${contentRuLength},
            "contentEnLength" = ${contentEnLength}
-    WHERE "pageId" = ${pageId}`
+    WHERE "pageId" = ${pageId}`,
   )
 
   if (result.err) {

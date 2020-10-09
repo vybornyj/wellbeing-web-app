@@ -23,7 +23,7 @@ const Page: NextPage<Props> = ({ error, lang, article }) => {
         breadcrumbs={[
           { href: '/', ru: 'Исследовательский проект Благополучие', en: 'Wellbeing Research Project' },
           { href: '/articles', ru: 'Статьи', en: 'Articles' },
-          { href: `/articles/[url]`, as: `/articles/${article?.url}`, ru: title, en: title }
+          { href: `/articles/[url]`, as: `/articles/${article?.url}`, ru: title, en: title },
         ]}
       />
       <h2>{title}</h2>
@@ -62,8 +62,8 @@ const Page: NextPage<Props> = ({ error, lang, article }) => {
 export const getServerSideProps: GetServerSideProps = async ({ res, params }) => ({
   props: {
     ...(await apiRequestServer(res, '/api/articles/select', { lang: params?.lang, url: params?.url, limit: 1 })),
-    lang: params?.lang
-  }
+    lang: params?.lang,
+  },
 })
 
 export default Page

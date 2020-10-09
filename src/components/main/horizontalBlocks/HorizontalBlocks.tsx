@@ -23,14 +23,14 @@ export const HorizontalBlocks: FunctionComponent<Props> = ({ lang, isArticles, i
       title: lang === 'ru' ? titleRu : titleEn,
       href: '/[lang]/articles/[url]',
       as: `/${lang}/articles/${url}`,
-      imageUrl: 'https://static.wellbeing-research.ru/categories/news2.jpg'
+      imageUrl: 'https://static.wellbeing-research.ru/categories/news2.jpg',
     })),
     {
       title: lang === 'ru' ? 'Все статьи' : 'All articles',
       href: '/[lang]/articles',
       as: `/${lang}/articles`,
-      imageUrl: '/images/product-default.png'
-    }
+      imageUrl: '/images/product-default.png',
+    },
   ]
 
   const products10 = [
@@ -38,14 +38,14 @@ export const HorizontalBlocks: FunctionComponent<Props> = ({ lang, isArticles, i
       title: lang === 'ru' ? titleRu : titleEn,
       href: '/[lang]/products/[url]',
       as: `/${lang}/products/${url}`,
-      imageUrl: imageUrl || '/images/product-default.png'
+      imageUrl: imageUrl || '/images/product-default.png',
     })),
     {
       title: lang === 'ru' ? 'Вся продукция' : 'All products',
       href: '/[lang]/products',
       as: `/${lang}/products`,
-      imageUrl: '/images/product-default.png'
-    }
+      imageUrl: '/images/product-default.png',
+    },
   ]
 
   return (

@@ -58,7 +58,7 @@ export const AdminLayoutEditProduct: FunctionComponent<Props> = ({ product, curr
       contentEnLength,
       contentUserRuLength,
       contentUserEnLength,
-      jcontainer: { variants }
+      jcontainer: { variants },
     }
 
     const { insertId, rowCount } = await apiRequestClient('/api/products/insertOrUpdate', data)
@@ -112,7 +112,7 @@ export const AdminLayoutEditProduct: FunctionComponent<Props> = ({ product, curr
           setTitleEn,
           urlLabel: 'URL адрес продукта',
           titleRuLabel: 'Название продукта на русском',
-          titleEnLabel: 'Название продукта на английском'
+          titleEnLabel: 'Название продукта на английском',
         }}
       />
 
@@ -147,7 +147,7 @@ export const AdminLayoutEditProduct: FunctionComponent<Props> = ({ product, curr
           titleRu,
           titleEn,
           labelRu: 'Описание продукта на русском',
-          labelEn: 'Описание продукта на английском'
+          labelEn: 'Описание продукта на английском',
         }}
       />
 
@@ -165,7 +165,7 @@ export const AdminLayoutEditProduct: FunctionComponent<Props> = ({ product, curr
           titleRu,
           titleEn,
           labelRu: 'Страница пользователя на русском',
-          labelEn: 'Страница пользователя на английском'
+          labelEn: 'Страница пользователя на английском',
         }}
       />
 

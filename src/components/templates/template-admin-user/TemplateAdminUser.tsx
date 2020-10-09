@@ -34,7 +34,7 @@ export const TemplateAdminUser: FunctionComponent<Props> = ({
   img2,
   asideFooter,
   withLangPrefix,
-  children
+  children,
 }) => {
   const router = useRouter()
   const [storeUser] = useGlobal('storeUser')

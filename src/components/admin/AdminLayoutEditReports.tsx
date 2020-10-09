@@ -88,8 +88,8 @@ export const AdminLayoutEditReports: FunctionComponent<Props> = ({ reports, purc
         published: false,
         title: '',
         content: '',
-        contentLength: 0
-      }
+        contentLength: 0,
+      },
     ])
     setDoRerender(!doRerender)
   }

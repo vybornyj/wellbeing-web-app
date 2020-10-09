@@ -34,7 +34,7 @@ export const AdminContentEditors: FunctionComponent<Props> = ({
   titleRu,
   titleEn,
   labelRu,
-  labelEn
+  labelEn,
 }) => {
   const STORE_SET_ALERT_POPUP = useDispatch('STORE_SET_ALERT_POPUP')
 

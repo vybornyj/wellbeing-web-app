@@ -20,7 +20,7 @@ export const TemplateModalMenuMobile: FunctionComponent<Props> = ({ lang, isOpen
             <ModalMenuMobileButton {...props} lang={lang} withLangPrefix={langPrefix ?? withLangPrefix} key={key} />
           ) : type === 'title' ? (
             <div className='title' {...props} lang={lang} key={key} />
-          ) : null
+          ) : null,
         )}
       </div>
 

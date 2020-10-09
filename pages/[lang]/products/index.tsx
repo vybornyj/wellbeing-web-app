@@ -23,8 +23,8 @@ export const getServerSideProps: GetServerSideProps = async ({ res, params }) =>
   props: {
     lang: params?.lang,
     ...(await apiRequestServer(res, '/api/products/selects')),
-    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json()
-  }
+    currency: await (await fetch('https://api.exchangeratesapi.io/latest')).json(),
+  },
 })
 
 export default Page

@@ -67,7 +67,7 @@ const Api = async (req, res: NextApiResponse<ResponseBody>) => {
         success: true,
         type: selectedToken.type,
         userId: selectedToken.userId,
-        email: selectedToken.email
+        email: selectedToken.email,
       })
     } else {
       logger.error(`/api/tokens/select: unknown token type`)

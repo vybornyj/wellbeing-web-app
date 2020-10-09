@@ -19,7 +19,7 @@ export const HorizontalBlocksInner: FunctionComponent<Props> = ({ elements }) =>
       ref.current.scrollTo({
         top: 0,
         left: ref.current.scrollLeft + event.deltaY / 5,
-        behavior: 'smooth'
+        behavior: 'smooth',
       })
     })
   }

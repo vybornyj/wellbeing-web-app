@@ -3,29 +3,29 @@ import { apiRequestClient } from 'src/scripts/api/apiRequestClient'
 
 export const INITIAL_STATE: State = {
   storeCart: {
-    products: []
+    products: [],
   },
   // USER DATA
   storeUser: {
     isDefined: false,
     isLogin: false,
     isAdmin: false,
-    email: ''
+    email: '',
   },
   // APP DATA
   storeArticles10: [],
   storeProducts10: [],
   globalCategories: [],
   // TEMPLATE DATA
-  storeAlertPopup: null
+  storeAlertPopup: null,
 }
 
 // const REDUCER = (globalState, reducers, globalStateProp) => ({ globalStateProp })
 const STORE_CART_ADD: Reducers['STORE_CART_ADD'] = async (globalState, __, productId, variantKey) => {
   return {
     storeCart: {
-      products: [...globalState.storeCart.products, { productId, variantKey }]
-    }
+      products: [...globalState.storeCart.products, { productId, variantKey }],
+    },
   }
 }
 
@@ -38,8 +38,8 @@ const STORE_CART_REMOVE: Reducers['STORE_CART_REMOVE'] = async (globalState, __,
 
   return {
     storeCart: {
-      products: [...cartProducts]
-    }
+      products: [...cartProducts],
+    },
   }
 }
 
@@ -50,8 +50,8 @@ const STORE_LOAD_USER_SESSION = async (_, __) => {
       isDefined: true,
       isLogin: !!email,
       isAdmin: !!isAdmin,
-      email: email ?? ''
-    }
+      email: email ?? '',
+    },
   }
 }
 
@@ -62,8 +62,8 @@ const STORE_SET_USER = (_, __, storeUser) => {
       isDefined: true,
       isLogin: !!email,
       isAdmin: !!isAdmin,
-      email: email ?? ''
-    }
+      email: email ?? '',
+    },
   }
 }
 
@@ -75,8 +75,8 @@ const STORE_CLOSE_USER_SESSION = async (_, __) => {
       isDefined: true,
       isLogin: false,
       isAdmin: false,
-      email: ''
-    }
+      email: '',
+    },
   }
 }
 
@@ -85,7 +85,7 @@ const STORE_INIT = async (globalState) => {
     const { articles, products } = await apiRequestClient(`/api/init`)
     return {
       storeArticles10: articles,
-      storeProducts10: products
+      storeProducts10: products,
     }
   } else {
     return {}
@@ -104,5 +104,5 @@ export const INITIAL_REDUCERS = {
 
   STORE_INIT,
 
-  STORE_SET_ALERT_POPUP
+  STORE_SET_ALERT_POPUP,
 }

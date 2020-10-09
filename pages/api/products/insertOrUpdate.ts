@@ -25,7 +25,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
     contentEnLength,
     contentUserRuLength,
     contentUserEnLength,
-    jcontainer
+    jcontainer,
   }: Product = req.body
 
   const result = await pgQuery(
@@ -65,7 +65,7 @@ const Api: NextApiHandler<ResponseBody> = async (req, res) => {
       "contentUserEnLength" = ${contentUserEnLength},
       "jcontainer" = ${jcontainer}
     WHERE "productId" = ${productId}
-  `
+  `,
   )
 
   if (result.err) {
